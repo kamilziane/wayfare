@@ -1,0 +1,20 @@
+{
+  "name": "wayfare-travel-planner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Wayfare \u2014 an AI-powered travel planner. Designed & built by Kamil Ziane.",
+  "scripts": {
+    "build": "node make-dist.js",
+    "bundle": "esbuild src/entry.jsx --bundle --minify --outfile=bundle.js --define:process.env.NODE_ENV='\"production\"'",
+    "dev": "esbuild src/entry.jsx --bundle --outfile=bundle.js --servedir=. --define:process.env.NODE_ENV='\"development\"'"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.15.0",
+    "lucide-react": "^0.383.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}

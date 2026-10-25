@@ -1,0 +1,5 @@
+# Netlify settings for this folder.
+# Netlify runs the build command, then publishes the "dist" folder it creates.
+[build]
+  command = "npm run build"
+  publish = "dist"
